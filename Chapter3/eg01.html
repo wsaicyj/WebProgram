@@ -6,10 +6,26 @@
 </head>
 <body>
     <p>img:添加元素.属性:src,alt,align(top,middle,right,left,bottom),height,width,hspace,vspace,ismap,usemap,longdesc,name</p>
-    <img src="1.jpg" alt="樱花" align="right">
-    <img src="2.jpg" alt="桥" align="middle" height="120" width="180">
-    <img src="3.jpg" alt="日落" align="bottom" border="5">
+    <hr>
+    <a href="../Chapter2/index.html" title="click here to return to the home page">
+    <img src="1.jpg" alt="樱花" align="right" width="130" height="130" border="0"></a>
+    <a href="http://map.baidu.com/">
+    <img src="2.jpg" alt="map of china" border="0" ismap="ismap"></a>
+    <img src="3.jpg" alt="日落" width="500" height="300" border="0" usemap="#3">
+    <map name="3">
+        <area shape="circle" coords="154,150,59" href="../Chapter2/index.html" target="_blank" alt="index">
+        <area shape="poly" coords="272,79,351,79,351,15,486,218,272,218,292,166,292,136,279,76" href="eg02.html" target="_blank" alt="eg02">
+    </map>
+    <object data="4.jpg" type="image/jpg" alt="美女" width="500" height="300" border="5" usemap="#4" />
+    <map name="4">
+        <a shape="circle" coords="154,150,59" href="../Chapter2/index.html" target="_blank">index</a>
+        <a shape="poly" coords="272,79,351,79,351,15,486,15,486,218,272,218,292,166,292,136,270,76" href="eg02.html" target="_blank">eg02</a>
+        <a shape="rect" coords="325,224,488,286" href="../Chapter1/food.xhtml" target="_blank">food</a>
+    </map>
+    <hr>
     <p>object:添加其他对象。属性:achieve,classid,border,codebase,codetype,data,declare,height,width,hspace,wspace,name,standby,tabindex,usemap</p>
+    <hr>
     <p>param:用于向对象传递参数。属性：name,type,value,valuetype</p>
+
 </body>
 </html>
