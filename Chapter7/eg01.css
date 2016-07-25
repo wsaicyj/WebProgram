@@ -1,0 +1,82 @@
+/* Style sheet for eg01.html */
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: Arial,Verdana,sans-serif;
+}
+h1 {
+    font-size:18pt;
+}
+p {
+    font-size: 12pt;
+}
+table {
+    background-color: #efefef;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999999;
+}
+th {
+    background-color: #cc3e34;
+    font-weight:bold;
+    padding:5px;
+}
+td {
+    padding: 5px;
+}
+td.code {
+    font-family: courier, courier-new,Serif;
+    font-weight: bold;
+}
+p.one {
+    font-family: Arial,Verdana,sans-serif;
+    font-weight: normal;
+    color: #cc1c1d;
+    text-align: right;
+    text-decoration: underline;
+
+}
+p.two {
+    font-family: times,"Times New Roman",serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline;
+}
+p.three {
+    font-family: courier,"Courier New",serif;
+    font-weight: bolder;
+    font-style: inherit;
+    text-align: justify;
+    text-decoration: line-through;
+    text-transform: lowercase;
+}
+p.four {
+    font-weight: lighter;
+    font-style: normal;
+    text-decoration: blink;
+    text-transform: uppercase;
+    direction: rtl;
+}
+p.five {
+    font-weight: 100;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
+    word-spacing: 20px;
+}
+p.six {
+    font-weight: 200;
+    font-style: oblique;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+}
+span.footnote {
+    vertical-align: text-top;
+}
+p.indent {
+    text-indent: 5em;
+    text-shadow: 0.3em 0.3em 0.5em black;
+}
+span:first-letter {
+    font-weight: bold;
+}

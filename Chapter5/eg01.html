@@ -5,9 +5,9 @@
     <title>表单</title>
 </head>
 <body>
-    <p>form：表单</p>
-    <p>表单控件:文本输入控件、按钮、复选框和单选按钮、选项框（有时称为下拉菜单）和列表框、文件选择框、隐藏控件</p>
-    <p>按钮:submit,reset,button,image</p>
+    <h3>form：表单</h3>
+    <h3>表单控件:文本输入控件、按钮、复选框和单选按钮、选项框（有时称为下拉菜单）和列表框、文件选择框、隐藏控件</h3>
+    <h3>按钮:submit,reset,button,image</h3>
     <form action="../Chapter2/index.html" method="get">
         <h3>Search the site</h3>
         <div>
@@ -23,6 +23,168 @@
             <textarea name="comment" rows="5" cols="14">Enter your comment</textarea>
         </div>
         <input type="submit" value="Search" />
+    </form>
+    <h3>复选框:checkbox</h3>
+    <form action="../Chapter2/index.html" method="get" name="frmCV">
+        Which of the following skills do you possess?Select all that apply.
+        <input type="checkbox" name="chkSkills" value="html" />HTML <br>
+        <input type="checkbox" name="chkSkills" value="xhtml" />XHTML <br>
+        <input type="checkbox" name="chkSkills" value="css" />CSS <br>
+        <input type="checkbox" name="chkSkills" value="JavaScript" />JS <br>
+        <input type="checkbox" name="chkSkills" value="aspnet" />ASP.NET <br>
+        <input type="checkbox" name="chkSkills" value="php" />PHP <br>
+    </form>
+    <h3>单选框:checkbox</h3>
+    <form action="../Chapter2/index.html" name="frmTandc" method="get">
+        <input type="checkbox" name="chkAcceptTerms" checked="checked" />
+        I accept the <a href="../Chapter2/foodmenu.html">tems and conditions</a>.<br>
+        <input type="submit" />
+    </form>
+    <h3>单选按钮:radio</h3>
+    <form action="../Chapter2/foodmenu.html" name="frmFlightBooking" method="get">
+        Please select which class of travel you wish to fly:<br />
+        <input type="radio" name="radClass" value="First" checked="checked" />First class
+        <input type="radio" name="radClass" value="Business" />Business class
+        <input type="radio" name="radClass" value="Economy" />Economy class
+    </form>
+    <h3>下拉选项框:select</h3>
+    <select name="seColor">
+        <option selected="selected" value="">Select color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <h3>滚动选项框:select</h3>
+    <form action="../Chapter2/foodmenu.html" method="get" name="frmDays">
+        <select size="6" name="selDay">
+            <option value="Mon">Monday</option>
+            <option value="Tue">Tuesday</option>
+            <option value="Wed">Wednesday</option>
+            <option value="Thu">Thursday</option>
+            <option value="Fri">Friday</option>
+            <option value="Sat">Saturday</option>
+            <option value="Sun">Sunday</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit" />
+    </form>
+    <h3>多项选择框:select(multiple)</h3>
+    <form action="../Chapter2/index.html" method="get" name="frmDays">
+        Please select more than one day of the week:<br/>
+        <select name="seleday" multiple="multiple">
+            <option value="Mon">Monday</option>
+            <option value="Tue">Tuesday</option>
+            <option value="Wed">Wednesday</option>
+            <option value="Thu">Thursday</option>
+            <option value="Fri">Friday</option>
+            <option value="Sat">Saturday</option>
+            <option value="Sun">Sunday</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit" />
+    </form>
+    <h3>分组选项:optgroup</h3>
+    <form action="../Chapter2/index.html" name="frmInfo" method="get">
+        Please select the product you are interested in:<br/>
+        <select name="selInformation">
+            <optgroup label="Hardware">
+                <option value="Desktop">Desktop computers</option>
+                <option value="Laptop">Laptop computers</option>
+            </optgroup>
+            <optgroup label="Software">
+                <option value="OfficeSoftware">Office software</option>
+                <option value="Games">Games</option>
+            </optgroup>
+            <optgroup label="Peripherals">
+                <option value="Monitors">Monitors</option>
+                <option value="InputDevices">Input Devices</option>
+                <option value="Storage">Storage</option>
+            </optgroup>
+        </select>
+        <br/><br/><input type="submit" value="Submit" />
+    </form>
+    <hr>
+    <form action="../Chapter2/index.html" name="frmInfo" method="get">
+        Please select the product you are interested in:<br/>
+        <select name="selInformation">
+            <option disabled="disabled" value="">- -Hardware- -</option>
+                <option value="Desktop">Desktop computers</option>
+                <option value="Laptop">Laptop computers</option>
+
+            <option disabled="disabled" value="">- -Software- -</option>
+                <option value="OfficeSoftware">Office software</option>
+                <option value="Games">Games</option>
+
+            <option disabled="disabled" value="">- -Peripherals- -</option>
+                <option value="Monitors">Monitors</option>
+                <option value="InputDevices">Input Devices</option>
+                <option value="Storage">Storage</option>
+        </select>
+        <br/><br/><input type="submit" value="Submit" />
+    </form>
+    <h3>文件选项框</h3>
+    <form action="../Chapter2/index.html" method="post" name="fromImageUpload" enctype="multipart/form-data">
+        <input type="file" name="fileUpload" accept="image/*" />
+        <br/><br/>
+        <input type="submit" value="Submit" />
+    </form>
+    <h3>隐藏控件 </h3>
+    <form action="../Chapter2/index.html" method="get" name="fromVote">
+        <input type="hidden" name="hidPageSentFrom" value="home page" />
+        <input type="submit" value="Click if this is your favorite page of our site." />
+    </form>
+    <h3>利用label元素为控件创建标签</h3>
+    <form action="" method="post" name="frmLogin">
+        <table>
+            <tr>
+                <td><label for="Username">User name</label></td>
+                <td><input type="text" name="txtName" id="Username" /></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Password</label></td>
+                <td><input type="password" id="pwd" name="pwdPassword" /></td>
+            </tr>
+        </table>
+    </form>
+    <h3>结构化表单:fieldset、legend</h3>
+    <form action="" method="post" name="frmComp">
+        <fieldset >
+            <legend><em>Contact Information</em></legend>
+            <label>First name: <input type="text" name="txtFName" size="20" /></label><br>
+            <label>Last name: <input type="text" name="txtLName" size="20" /></label><br>
+            <label>E-mail: <input type="email" name="txtEmail" size="20" /></label>
+        </fieldset>
+        <fieldset>
+            <legend><em>Competition Question</em></legend>
+            How tall is the Eiffel Tower in Pairs,France?<br>
+            <label><input type="radio" name="radAnswer" value="584" />584ft</label><br>
+            <label><input type="radio" name="radAnswer" value="784" />784ft</label><br>
+            <label><input type="radio" name="radAnswer" value="984" />984ft</label><br>
+            <label><input type="radio" name="radAnswer" value="1184" />1184ft</label><br>
+        </fieldset>
+        <fieldset>
+            <legend><em>Tiebreaker Question</em></legend>
+            <label>In 25 words or less,say why you would like to win $10,000:<br>
+                <textarea name="txtTiebreaker" rows="10" cols="40"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend><em>Enter competition</em></legend>
+            <input type="submit" value="Enter Competition" />
+        </fieldset>
+    </form>
+    <h3>焦点移动顺序</h3>
+    <form action="" method="get" name="frmTabExample">
+        <input type="checkbox" value="1" name="chkNumber" tabindex="3">One<br/>
+        <input type="checkbox" value="2" name="chkNumber" tabindex="8">Two<br/>
+        <input type="checkbox" value="3" name="chkNumber" tabindex="1">Three<br/>
+        <input type="checkbox" value="4" name="chkNumber" tabindex="7">Four<br/>
+        <input type="checkbox" value="5" name="chkNumber" tabindex="2">Five<br/>
+        <input type="checkbox" value="6" name="chkNumber" tabindex="6">Six<br/>
+        <input type="checkbox" value="7" name="chkNumber" tabindex="9">Seven<br/>
+        <input type="checkbox" value="8" name="chkNumber" tabindex="4">Eight<br/>
+        <input type="checkbox" value="9" name="chkNumber" tabindex="5">Nine<br/>
+
     </form>
 </body>
 </html>
