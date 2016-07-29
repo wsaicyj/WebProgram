@@ -1,0 +1,54 @@
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+p {
+    border-width: 4px;
+    border-color: red;
+    line-height: 24px;
+    margin: 40px 20px 20px 20px;
+}
+.solid {
+    border-style: solid;
+    width: 200px;
+    height: 100px;
+    padding:10px;
+}
+.dashed {
+    border-style: dashed;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+}
+.dotted {
+    border-style: dotted;
+}
+.groove {
+    border-style: groove;
+}
+.inset {
+    border-style: inset;
+}
+.outset {
+    border-style: outset;
+}
+.ridge {
+    border-style: ridge;
+}
+.hidden {
+    border-style: hidden;
+}
+.double {
+    border-style: double;
+}
+div {
+    min-width: 200px;
+    max-width: 500px;
+    padding: 5px;
+    border: 1px solid #000000;
+    margin: 20px 20px 20px 20px;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: scroll;
+}
