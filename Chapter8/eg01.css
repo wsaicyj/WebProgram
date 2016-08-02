@@ -1,6 +1,8 @@
 body {
     background-color: #c7c7c7;
     background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 a {
     font-size: 24px;
@@ -21,4 +23,10 @@ a:active {
 a:link:hover {
     background-color: chartreuse;
     text-decoration: none;
+}
+ul {
+    list-style-image: url("favicon.ico");
+}
+li {
+    marker-offset: 20px;
 }
