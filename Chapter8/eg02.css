@@ -5,6 +5,9 @@ body {
 h1 {
     font-size: 18pt;
 }
+caption {
+    caption-side: bottom;
+}
 table {
     background-color: #efefef;
     width: 800px;
@@ -12,10 +15,15 @@ table {
     border-width: 1px;
     border-color: #999999;
     border-collapse: separate;
+    padding: 5px;
+    outline-style: solid;
 }
 td {
     padding: 5px;
-    background-color: #81878c;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c7c7c7;
+    border-spacing: 2px;
 }
 td.char {
     width: 75px;
@@ -23,4 +31,16 @@ td.char {
     text-align: right;
     vertical-align: top;
     background-color: #999999;
+}
+input:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #ff0000;
+}
+p.abstract:after {
+    content:"You need to register to read the full article.";
+    color: #ff0000;
+}
+.pwd {
+    visibility: visible;
 }
