@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="eg02.css"/>
+</head>
+<body>
+<form class="register" method="post">
+    <fieldset>
+        <legend>用户注册</legend>
+        <table>
+            <tr>
+                <td class="label"><label for="fname">FirstName:<span class="required">*</span></label></td>
+                <td class="form"><input id="fname" type="text" size="12"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="lname">LastName:<span class="required">*</span></label></td>
+                <td class="form"><input id="lname" type="text" size="12"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="email">E-mail:<span class="required">*</span></label></td>
+                <td class="form"><input id="email" type="text" size="12"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="pwd">Password:<span class="required">*</span></label></td>
+                <td class="form">
+                    <input id="pwd" type="text" size="12">
+                    <span class="small">must be between of 6 and 12 characters long</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label"><label for="cpwd">Confirm password:<span class="required">*</span></label></td>
+                <td class="form">
+                    <input id="cpwd" type="text" size="12">
+                    <span class="small">must be between of 6 and 12 characters long</span>
+                </td>
+            </tr>
+
+        </table>
+        <div class="submit"><input id="submit" type="submit" value="Register" /></div>
+    </fieldset>
+</form>
+</body>
+</html>
