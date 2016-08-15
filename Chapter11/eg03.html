@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string object</title>
+    <script type="text/javascript">
+        function statusBarText() {
+            window.status = 'Did you see me here?'
+        }
+    </script>
+</head>
+<body onload="statusBarText()">
+<script type="text/javascript">
+    myString = new String("Learning about Build-in object is easy!")
+    myString = myString.substring(15, 31)
+    myString = myString.toUpperCase()
+    document.write(myString)
+    var birthDate = new Date(2016, 8, 15)
+    document.write(birthDate)
+</script>
+<input type="button" value="open window" onclick="window.open('http://www.baidu.com')"/>
+</body>
+</html>

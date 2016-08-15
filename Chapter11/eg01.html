@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文档对象模型</title>
+</head>
+<body>
+<h1>用户注册</h1>
+<form action="#" method="post" class="regist" name="reg" onsubmit="alert(document.reg.un.value)">
+<div>
+    <label for="uname">UserName:</label>
+    <input id="uname" name="un" type="text" />
+</div>
+<div>
+    <label for="pwd">Password:</label>
+    <input id="pwd" type="password" />
+</div>
+<div>
+    <input type="submit" value="注册" />
+</div>
+</form>
+<p>
+    if you are a new user <a href="#">Register here</a> | if you lose your password,you can find it back <a href="#">here</a>.
+</p>
+<h2>图片翻转</h2>
+<a href="#"
+    onmouseover="document.images.im.src='2.jpg';"
+    onmouseout="document.images.im.src='1.jpg'">
+    <img name="im" src="1.jpg" alt="图片" border="0"  />
+</a>
+</body>
+</html>
