@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <script type="text/javascript">
+        function calculArea(width, height) {
+            return width * height
+        }
+    </script>
+    <script type="text/javascript">
+        date = new Date();
+        hours = date.getHours();
+        if (hours < 12) {
+            document.write('Good morning!');
+        }
+        else {
+            document.write('Good afternoon!');
+        }
+    </script>
+    <script type="text/javascript">
+        function checkDay() {
+            switch (document.day.textDay.value) {
+                case 'mon':
+                    alert('Today is monday!')
+                    break;
+                case 'tue':
+                    alert('Today is tuesday!')
+                    break;
+                case 'wed':
+                    alert('Today is wednesday!')
+                    break;
+                default:
+                    alert('Non day you enter!')
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="#" method="post" name="cal">
+    width:<input name="width" type="text"/>
+    height:<input name="height" type="text"/>
+    <input type="button" value="calcultion"
+           onclick="alert(calculArea(document.cal.width.value,document.cal.height.value))"/>
+</form>
+<p>Enter weekday in frame:</p>
+<form name="day" action="#" method="post" >
+    星期:<input name="textDay" type="text" >
+    <input name="cd" type="button"  value="提交" onclick="checkDay()" />
+</form>
+
+</body>
+</html>
