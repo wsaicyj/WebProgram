@@ -1,0 +1,16 @@
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+.l {
+    width: 600px;
+}
+.lg {
+    text-align: center;
+}
+div.rm {
+    margin: 15px;
+}
+label {
+    text-align: right;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="eg01.css"/>
+    <script type="text/javascript">
+        function validate(login) {
+            var returnValue = true;
+            var username = login.un.value;
+            var password = login.pwd.value;
+            var confirnPWD = login.cpw.value;
+
+            if (username.length < 6) {
+                returnValue = false;
+                alert("用户名必须大于6位！")
+                login.un.focus();
+            }
+
+            if (password.length < 6) {
+                returnValue = false;
+                alert("密码必须大于6位数")
+                login.pwd.value = "";
+                login.cpw.value = "";
+                login.pwd.focus();
+            }
+
+            if (password.value != confirnPWD.value) {
+                returnValue = true;
+                alert("密码与确认密码不一致！")
+                login.pwd.value = "";
+                login.cpw.value = "";
+                login.pwd.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="login" action="#" method="post" onsubmit="return validate(this);">
+    <fieldset>
+        <legend>注册</legend>
+        <div class="lg">
+            <div class="rm">
+                <label for="uname">用户名:</label>
+                <input name="un" id="uname" type="text"/>
+            </div>
+            <div class="rm">
+                <label for="pw">密码:</label>
+                <input name="pwd" id="pw" type="text">
+            </div>
+            <div class="rm">
+                <label for="cp">确认密码:</label>
+                <input name="cpw" id="cp" type="text">
+            </div>
+            <div class="rm">
+                <input type="submit" value="登录"/>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
