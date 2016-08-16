@@ -9,7 +9,19 @@
             var returnValue = true;
             var username = login.un.value;
             var password = login.pwd.value;
-            var confirnPWD = login.cpw.value;
+            var cpwd = login.cpw.value;
+            var require = login.elements;
+
+            for(var i=0;i < require.length;i++) {
+                cr = require[i];
+                if (cr.value == "" && cr.className == "required") {
+                    alert(cr.name + "不能为空！")
+                    cr.focus()
+                    returnValue = false
+                    break
+                }
+                return returnValue
+            }
 
             if (username.length < 6) {
                 returnValue = false;
@@ -25,13 +37,17 @@
                 login.pwd.focus();
             }
 
-            if (password.value != confirnPWD.value) {
-                returnValue = true;
+            if (password.value != cpwd.value) {
+                returnValue = false;
                 alert("密码与确认密码不一致！")
                 login.pwd.value = "";
                 login.cpw.value = "";
                 login.pwd.focus();
             }
+
+
+
+            alert("登录成功！")
         }
     </script>
 </head>
@@ -39,23 +55,13 @@
 <form name="login" action="#" method="post" onsubmit="return validate(this);">
     <fieldset>
         <legend>注册</legend>
-        <div class="lg">
-            <div class="rm">
-                <label for="uname">用户名:</label>
-                <input name="un" id="uname" type="text"/>
-            </div>
-            <div class="rm">
-                <label for="pw">密码:</label>
-                <input name="pwd" id="pw" type="text">
-            </div>
-            <div class="rm">
-                <label for="cp">确认密码:</label>
-                <input name="cpw" id="cp" type="text">
-            </div>
-            <div class="rm">
-                <input type="submit" value="登录"/>
-            </div>
-        </div>
+        <div><label for="uname">&nbsp;用户名:</label>
+            <input name="un" id="uname" type="text" class="required"/></div>
+        <div><label for="pw">&nbsp;&nbsp;密码:</label>
+            <input name="pwd" id="pw" type="password" class="required"></div>
+        <div><label for="cp">确认密码:</label>
+            <input name="cpw" id="cp" type="password" class="required"></div>
+        <div><input type="submit" value="登录"/></div>
     </fieldset>
 </form>
 </body>
