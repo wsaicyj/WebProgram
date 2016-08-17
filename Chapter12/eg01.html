@@ -15,18 +15,18 @@
             for(var i=0;i < require.length;i++) {
                 cr = require[i];
                 if (cr.value == "" && cr.className == "required") {
-                    alert(cr.name + "不能为空！")
-                    cr.focus()
-                    returnValue = false
-                    break
+                    alert(cr.name + "不能为空！");
+                    cr.focus();
+                    returnValue = false;
+                    break;
                 }
-                return returnValue
             }
 
             if (username.length < 6) {
                 returnValue = false;
                 alert("用户名必须大于6位！")
                 login.un.focus();
+                return returnValue;
             }
 
             if (password.length < 6) {
@@ -35,6 +35,7 @@
                 login.pwd.value = "";
                 login.cpw.value = "";
                 login.pwd.focus();
+                return returnValue;
             }
 
             if (password.value != cpwd.value) {
@@ -43,9 +44,8 @@
                 login.pwd.value = "";
                 login.cpw.value = "";
                 login.pwd.focus();
+                return returnValue;
             }
-
-
 
             alert("登录成功！")
         }

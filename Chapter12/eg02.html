@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script type="text/javascript" src="scripts/validate.js"></script>
+</head>
+<body>
+<form name="myForm">
+    <textarea name="myTextArea" id="myTextArea" cols="40" rows="10">I am interested in Curl,here is url for it</textarea>
+    <input name="" type="button" value="replace" onclick="document.myForm.myTextArea.value=document.myForm.myTextArea.value.replace(/\burl\b/gi,'abc')" >
+</form>
+<hr>
+<form name="myEmail" onsubmit="return validate(this);" method="get" action="#">
+    Enter an amount of money of here $
+    <input name="txtAmount" id="txtAmount" type="text" size="7" />
+    <input type="submit" value="check format" >
+</form>
+<hr>
+<form name="myCard" method="post" onsubmit="return validateCard(this);">
+    <select name="selCard" id="selCard">
+        <option>请选择卡</option>
+        <option name="zk">招行卡</option>
+        <option name="pk">浦发卡</option>
+        <option name="gk">广发卡</option>
+        <option name="jk">交行卡</option>
+        <option name="hk">华夏卡</option>
+    </select>
+    <input type="submit" value="commit">
+</form>
+<hr>
+<form name="radCard" method="post" onsubmit="return validateRadioCard(this);">
+    <h3>请选择信用卡</h3>
+    <input type="radio" name="radSuit" value="招行卡" />招行卡
+    <input type="radio" name="radSuit" value="浦发卡" />浦发卡
+    <input type="radio" name="radSuit" value="广发卡" />广发卡
+    <input type="radio" name="radSuit" value="交行卡" />交行卡
+    <input type="radio" name="radSuit" value="华夏卡" />华夏卡
+    <p><input type="checkbox" name="agree" >同意选择</p>
+    <p><input type="submit" value="commit" /></p>
+</form>
+<hr>
+<form name="ckCard" method="post">
+    <h3>请选择信用卡</h3>
+    <input type="checkbox" name="ckSuit" value="招行卡" />招行卡
+    <input type="checkbox" name="ckSuit" value="浦发卡" />浦发卡
+    <input type="checkbox" name="ckSuit" value="广发卡" />广发卡
+    <input type="checkbox" name="ckSuit" value="交行卡" />交行卡
+    <input type="checkbox" name="ckSuit" value="华夏卡" />华夏卡
+    <p><input type="button" value="commit" onclick="countCheckbox(ckCard.ckSuit)" /></p>
+</form>
+</body>
+</html>
