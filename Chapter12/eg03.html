@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增强表单的可用性</title>
+</head>
+<body>
+<form name="frmDOB">
+    Enter your date of birth:<br />
+    <input name="txtMonth" id="txtMonth" size="3" maxlength="2" onkeyup="if(this.value.length>=1){this.frmDOB.txtDay.focus();}" />
+    <input name="txtDay" id="txtDay" size="3" maxlength="2" onkeyup="if(this.value.length>=2){this.frmDOB.txtYear.focus();}" />
+    <input name="txtYear" id="txtYear" size="5" maxlength="4" onkeyup="if(this.value.length>=4){this.frmDOB.submit.focus();}"  />
+    <input name="submit" type="submit" value="send" />
+</form>
+</body>
+</html>
