@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>增强表单的可用性</title>
+    <script type="text/javascript" src="scripts/validate.js"></script>
 </head>
-<body>
+<body onload="document.myWeb.txtOther.disabled=true;
+              document.myWeb.txtOther.value='not applicable';">
 <form name="frmDOB">
-    Enter your date of birth:<br />
-    <input name="txtMonth" id="txtMonth" size="3" maxlength="2" onkeyup="if(this.value.length>=1){this.frmDOB.txtDay.focus();}" />
-    <input name="txtDay" id="txtDay" size="3" maxlength="2" onkeyup="if(this.value.length>=2){this.frmDOB.txtYear.focus();}" />
-    <input name="txtYear" id="txtYear" size="5" maxlength="4" onkeyup="if(this.value.length>=4){this.frmDOB.submit.focus();}"  />
-    <input name="submit" type="submit" value="send" />
+    Enter your date of birth:<br/>
+    <input name="txtMonth" id="txtMonth" size="3" maxlength="2"
+           onkeyup="if(this.value.length>=2){frmDOB.txtDay.focus();}"/>
+    <input name="txtDay" id="txtDay" size="3" maxlength="2"
+           onkeyup="if(this.value.length>=2){frmDOB.txtYear.focus();}"/>
+    <input name="txtYear" id="txtYear" size="5" maxlength="4"
+           onkeyup="if(this.value.length>=4){frmDOB.submit.focus();}"/>
+    <input name="submit" type="submit" value="send"/>
+</form>
+<hr>
+<h3>禁用文本输入框</h3>
+<form name="myWeb">
+    how did you hear about this?<br>
+    <input name="radSuit" id="friend" type="radio" value="friend"/>friend
+    <input name="radSuit" id="tv" type="radio" value="tv"/>TV AD.
+    <input name="radSuit" id="newspaper" type="radio" value="newspaper"/>Newspaper
+    <input name="radSuit" id="internet" type="radio" value="Internet"/>Internet
+    <input name="radSuit" id="other" type="radio" value="other" onclick="handleOther(this.value)"/>other
+    Please specify:<input type="text" name="txtOther"/>
+</form>
+<hr>
+<h3>转换大小写</h3>
+<form>
+    <input name="case" type="text" onblur="this.value=this.value.toUpperCase()"/>
+</form>
+<hr>
+<h3>选择文本的全部内容</h3>
+<form name="selAll">
+    <textarea name="taSel" cols="40" rows="5">this is some text.</textarea>
+    <input type="button" name="btnSelAll" value="select all" onclick="selectAll(document.selAll.taSel)"  />
 </form>
 </body>
 </html>

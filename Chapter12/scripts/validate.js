@@ -64,3 +64,22 @@ function countCheckbox(field) {
     }
     alert("你总共选择了" + intCount + "项!")
 }
+
+//禁用文本输入框
+function handleOther(strRad) {
+ if (strRad == 'other') {
+     document.myWeb.txtOther.disabled = false;
+     document.myWeb.txtOther.value = "";
+ }else if (strRad != 'other'){
+     alert(1111)
+     document.myWeb.txtOther.disabled = true;
+     document.myWeb.txtOther.value = "not applicable"
+ }
+}
+
+
+//选择文本的全部内容
+function selectAll(strControl) {
+    strControl.focus();
+    strControl.select();
+}
