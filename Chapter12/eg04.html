@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>E-mail</title>
+    <link rel="stylesheet" type="text/css" href="css/email.css"/>
+    <script type="text/javascript" src="scripts/email.js"></script>
 </head>
 <body>
-<form>
-    <div>
-        <div>
-            <label for="rec">收件人:</label>
-            <input name="rec" id="rec" type="text"/>
-        </div>
-        <div>
-            <label for="cc">抄送:</label>
-            <input name="cc" id="cc" type="text"/>
-        </div>
-        <div>
-            <label for="topic">主题:</label>
-            <input name="topic" id="topic" type="text"/>
-        </div>
+<form name="sendEmail">
+    <div id="toCCSubject">
+        <div><label for="rec">收件人:</label></div>
+        <div><input name="rec" id="rec" type="text" value="" /></div>
+        <div><label for="cc">抄送:</label></div>
+        <div><input name="cc" id="cc" type="text"/></div>
+        <div><label for="topic">主题:</label></div>
+        <div><input name="topic" id="topic" type="text"/></div>
     </div>
-    <div>
-        <label for="content">正文:</label>
-        <input name="content" id="content" type="text"/>
-    </div>
-    <div>
-        <select>
-            <option>aaron</option>
-            <option>cyj</option>
-            <option>wsaicyj</option>
-            <option>lily</option>
+
+    <div id="addressBook">
+        Quick address book:<br>
+        <select name="selectEmailList" class="selectEmail" size="4">
+            <option value="aaron@163.com">aaron</option>
+            <option value="cyj@163.com">cyj</option>
+            <option value="wsaicyj@163.com">wsaicyj</option>
+            <option value="lily@163.com">lily</option>
         </select>
-        <input type="button" name="send_to" id="send_to" value="发送" />
-        <input type="button" name="btncc" id="btncc" value="抄送" />
+        <p>
+            <input type="button" name="send_to" id="send_to" value="添加到收件人" onclick="return addRec(sendEmail);"/>
+            <input type="button" name="btncc" id="btncc" value="添加到抄送"/>
+        </p>
+    </div>
+    <div id="message">
+        <div>正文:</div>
+        <textarea name="txtMessage" cols="115" rows="20"></textarea>
+        <p><input name="btnMessage" value="提交" type="button" ></p>
     </div>
 </form>
 </body>
