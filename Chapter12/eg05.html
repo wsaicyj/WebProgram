@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像翻转</title>
+    <link rel="stylesheet" type="text/css" href="css/eg05.css"/>
+</head>
+<body>
+<div class="nav">
+    <a onmouseover="changeImages('home','homeOn')"
+       onmouseout="changeImages('home','homeOff')"><img name="home" src="images/home.jpg" alt="home" border="0"></a>
+</div>
+<script type="text/javascript">
+    var contenArr = new Array();
+    contenArr[0] = '第一个提示！';
+    contenArr[1] = '第二个提示！';
+    contenArr[2] = '第三个提示！';
+    contenArr[3] = '第四个提示！';
+    contenArr[4] = '第五个提示！';
+    var i = Math.floor(Math.random() * contenArr.length);
+    document.write(contenArr[i]);
+</script>
+<a href="http://www.baidu.com"
+   onclick="window.open(this.href,'search','width=400,height=300,scrollbars,resizble');return false;">link to open new
+    website</a>
+</body>
+</html>
