@@ -5,16 +5,17 @@
     <title>E-mail</title>
     <link rel="stylesheet" type="text/css" href="css/email.css"/>
     <script type="text/javascript" src="scripts/email.js"></script>
+
 </head>
 <body>
-<form name="sendEmail">
+<form name="sendEmail" method="post" action="#" onsubmit="return validate(this);">
     <div id="toCCSubject">
         <div><label for="rec">收件人:</label></div>
-        <div><input name="rec" id="rec" type="text" value="" /></div>
+        <div class="input"><input name="rec" id="rec" type="text" /></div>
         <div><label for="cc">抄送:</label></div>
-        <div><input name="cc" id="cc" type="text"/></div>
+        <div class="input"><input name="cc" id="cc" type="text"/></div>
         <div><label for="topic">主题:</label></div>
-        <div><input name="topic" id="topic" type="text"/></div>
+        <div class="input"><input name="topic" id="topic" type="text"/></div>
     </div>
 
     <div id="addressBook">
@@ -27,13 +28,13 @@
         </select>
         <p>
             <input type="button" name="send_to" id="send_to" value="添加到收件人" onclick="return addRec(sendEmail);"/>
-            <input type="button" name="btncc" id="btncc" value="添加到抄送"/>
+            <input type="button" name="btncc" id="btncc" value="添加到抄送" onclick="return addCC(sendEmail);"/>
         </p>
     </div>
     <div id="message">
         <div>正文:</div>
-        <textarea name="txtMessage" cols="115" rows="20"></textarea>
-        <p><input name="btnMessage" value="提交" type="button" ></p>
+        <textarea name="taMessage" cols="110" rows="20"></textarea>
+        <p><input name="btnMessage" value="提交" type="submit" ></p>
     </div>
 </form>
 </body>
