@@ -2,10 +2,31 @@ body {
     color: #000000;
     background-color: #ffffff;
 }
-.nav {
+.nav1 {
     padding: 15px;
 }
 img {
     width: 50px;
     height: 50px;
+}
+ul#nav,ul#nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+ul#nav {
+    font-size: 1em;
+    background-color: #ddd;
+}
+ul#nav li a {
+    border-color: #000;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    display: block;
+    float: left;
+    padding: 3px;
+}
+ul#nav li.first a {
+    border-width: 1px;
 }

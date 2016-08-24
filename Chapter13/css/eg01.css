@@ -1,0 +1,16 @@
+a {
+    border-bottom: 1px solid #eee;
+    color: #d17e62;
+    text-decoration: none;
+}
+a:visited {
+    border-bottom: 1px solid #eee;
+    color: #9d604c;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #ffffda;
+    border-bottom: 1px solid #eee;
+    color: #c30;
+    text-decoration: none;
+}
