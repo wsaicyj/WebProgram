@@ -1,3 +1,15 @@
 select.selectEmail {
     width: 150px;
 }
+#toCCSubject {
+    width: 500px;
+}
+#addressBook {
+    position: absolute;
+    top: 5px;
+    left: 600px;
+}
+.input input {
+    width: 500px;
+
+}
