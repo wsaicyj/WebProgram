@@ -1,16 +1,45 @@
-a {
-    border-bottom: 1px solid #eee;
-    color: #d17e62;
-    text-decoration: none;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-a:visited {
-    border-bottom: 1px solid #eee;
-    color: #9d604c;
-    text-decoration: none;
+ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
 }
-a:hover {
-    background-color: #ffffda;
-    border-bottom: 1px solid #eee;
-    color: #c30;
+ul li a {
+    color: #777;
+    display: block;
+    padding: 80px 10px 5px;
+    text-align: center;
     text-decoration: none;
+    width: 75px;
+}
+ul li#wpub a {
+    background: transparent url(wpub.jpg)  no-repeat top center;
+}
+ul li#wcon a {
+    background: transparent url(wcon.jpg) no-repeat top center;
+}
+ul li#wshr a {
+    background: transparent url(wshr.jpg) no-repeat top center;
+}
+ul li#wpst a {
+    background: transparent url(wpst.jpg) no-repeat top center;
+}
+ul li a strong {
+    color: #000;
+    font-size: larger;
+}
+ul li a strong {
+    color: #000;
+    display: block;
+    font-size: larger;
+}
+ul li#wpub a:hover,ul li#wcon a:hover,ul li#wshr a:hover,ul li#wpst a:hover {
+    background-color: #f8f2eb;
+}
+ul li a:hover {
+    color: #000;
 }
