@@ -1,0 +1,31 @@
+div#link {
+    color: #333333;
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 300px;
+}
+html > body div#link {
+    width: 250px;
+}
+div#link ul {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+div#link ul li {
+    list-style: none;
+    margin: 0 0 .5em 0;
+}
+html > body div#link ul li a {
+    text-decoration: none;
+    color: #333;
+}
+div#link:hover ul li a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+div#link ul li a:hover {
+    background-color: #ffff66;
+    color: #000;
+    text-decoration: none;
+
+}

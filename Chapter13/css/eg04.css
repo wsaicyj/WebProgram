@@ -1,0 +1,17 @@
+.box {
+    position: relative;
+}
+html > body div#photo-lucas img {
+    left: -5000px;
+    position: absolute;
+}
+html > body div#photo-lucas {
+    background: transparent url(baby2.png) no-repeat top left;
+    height: 160px;
+    left: 500px;
+    position: absolute;
+    width: 160px;
+}
+div.box:hover div#photo-lucas {
+    background-position: top right;
+}
