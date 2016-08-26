@@ -1,0 +1,51 @@
+* {
+    padding:0;
+    margin:0;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 11px;
+    color: #444;
+}
+h2 {
+    font-weight: normal;
+    font-size: 21px;
+}
+a {
+    text-decoration: none;
+}
+a:link,a:visited {
+    color: #0021a5;
+}
+a:hover,a:active {
+    color: #ff4a00;
+}
+acronym {
+    border: 0;
+    font-style: normal;
+}
+#nav {
+    width: 248px;
+    float: left;
+    padding: 6px 2px 0 0;
+    margin: 0 2px;
+}
+#nav h2 {
+    padding: 7px 0 0 20px;
+    letter-spacing: 1px;
+    line-height: 22px;
+
+}
+#nav ul {
+    padding: 0 0 7px 20px;
+    height: 26px;
+    border-bottom: 1px solid #eee;
+}
+#nav li {
+    display: inline;
+    line-height: 13px;
+    padding-right:4px;
+    float: left;
+}
