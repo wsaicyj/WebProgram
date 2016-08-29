@@ -1,0 +1,44 @@
+#superNav {
+    width: 200px;
+    position: absolute;
+    top: 195px;
+    left: 2px;
+}
+#superNav h2 {
+    display: none;
+}
+#utilNav li {
+    display: inline;
+    width: 99px;
+    line-height:21px;
+    margin: 0 0 1px 1px;
+    float: left;
+}
+#utilNav li a {
+    width: 99px;
+    display: block;
+    height:21px;
+    text-indent: 3px;
+    float: left;
+}
+#utilNav li a:hover {
+    background-color: #566cc3;
+}
+ul#more {
+    clear: left;
+    margin-left: 1px;
+    padding: 6px 0;
+}
+ul#more li {
+    line-height: 22px;
+    display: inline;
+}
+ul#more li a {
+    height: 22px;
+    display: block;
+    padding-left: 16px;
+    font-size: 12px;
+}
+ul#more li a:hover {
+    background-color: #0021a5;
+}

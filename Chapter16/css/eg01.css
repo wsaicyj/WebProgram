@@ -1,0 +1,67 @@
+ul#nav {
+    width: 350px;
+    height: 36px;
+    padding: 0 0 0 5px;
+    margin-bottom: 19px;
+}
+ul#nav li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+ul#nav li a {
+    border: 0;
+    display: block;
+    text-decoration: none;
+}
+li#home a {
+    width: 60px;
+    height: 37px;
+}
+li#about a {
+    width: 70px;
+    height: 37px;
+}
+li#archive a {
+    width: 85px;
+    height: 37px;
+}
+li#contact a {
+    width: 80px;
+    height: 37px;
+}
+li#links {
+    width: 55px;
+    heigth: 37px;
+}
+li#home a:hover,li#home a:focus {
+    background-position: 0px -37px;
+}
+li#about a:hover,li#about a:focus {
+    background-position: -60px -37px;
+}
+li#archive a:hover,li#archive a:focus {
+    background-position: -130px -37px;
+}
+li#links a:hover,li#links a:focus {
+    background-position: -215px -37px;
+}
+li#contact a:hover,li#contact a:focus {
+    background-position: -295px -37px;
+}
+li#home a:link,li#home a:visited {
+    background-position: 0px -37px;
+}
+li#about a:link,li#about a:visited {
+    background-position: -60px -37px;
+}
+li#archive a:link,li#archive a:visited {
+    background-position: -130px -37px;
+}
+li#links a:link,li#links a:visited {
+    background-position: -215px -37px;
+}
+li#contact a:link,li#contact a:visited {
+    background-position: -295px -37px;
+}
