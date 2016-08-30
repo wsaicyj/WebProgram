@@ -1,0 +1,26 @@
+body {
+    color: #000;
+    font: 75%/1.6em "Lucida Grande";
+    margin: 0;
+    padding: 0;
+}
+h1,h2 {
+    font-weight: normal;
+    line-height: 1em;
+    margin-top: 0;
+}
+#header {
+    background-color: #DFD;
+    border: 1px solid #060;
+}
+#footer {
+    background-color: #fdd;
+    border: 1px solid #c00;
+}
+#left,#right {
+    background-color: #ddf;
+    border: 1px solid #00c;
+}
+#header hr,#footer hr {
+    display: none;
+}

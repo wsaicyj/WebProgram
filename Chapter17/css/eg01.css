@@ -1,0 +1,14 @@
+#outer {
+    background: #ddf;
+    border: 4px solid #006;
+    height: 300px;
+    margin: 120px 20px;
+    position: relative;
+}
+#inner {
+    background: #fdc;
+    border: 4px solid #930;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
